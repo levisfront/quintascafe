@@ -1,0 +1,246 @@
+@import 'variables.scss';
+
+.main {
+
+    &__services {
+        position: relative;
+        background-color: $colorBrown;
+        padding: 100px 0 22% 0;
+
+        @media (max-width: 992px) { 
+            padding-bottom: 0;
+            padding-top: 50px;
+        }
+
+        .container {
+            overflow: hidden;
+        }
+        &--mgb {
+            margin-bottom: 30px;
+
+            @media (max-width: 992px) { 
+                padding-bottom: 0;
+                margin-bottom: 0;
+            }
+        }
+        &-title {
+            position: relative;
+            z-index: 2;
+            margin-right: 119px;
+            float: left;
+
+            @media (max-width: 1200px){
+                margin-right: 95px;
+            }
+            @media (max-width: 768px){
+                margin-right: 0px;
+                clear: both;
+            }
+
+            &--line {
+                background-color: $colorRed;
+                height: 4px;
+                display: block;
+                margin-right: 50px;
+                width: 80px;
+                float: left;
+
+                @media (max-width: 1200px){ width:50px; }
+                @media (max-width: 768px){
+                    display: none;
+                }
+            }
+            &--tit {
+                border-bottom: 4px solid $colorYellow;
+                padding-bottom: 7px;
+                font-size: 42px;
+                font-weight: normal;
+                color:$colorWhite;
+                float: left;
+                line-height: 1;
+
+                @media (max-width: 768px){
+                    clear: both;
+                    margin-bottom: 40px;
+                }
+            }
+        }
+        &-box {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            flex-wrap: wrap;
+
+            @media (max-width: 768px){
+                flex-direction: column;
+                width: 100%;
+                margin-bottom: 40px;
+            }
+
+            &--info {
+                width: 29%;
+                padding: 0 15px;
+                margin-bottom: 60px;
+
+                @media (max-width: 1200px){ width:45%; }
+                @media (max-width: 768px){ 
+                    padding: 0;
+                    width: auto; 
+                    margin-bottom: 5px;
+                }
+                    
+            }
+            &--title {
+                margin-bottom: 40px;
+                padding-bottom: 7px;
+                font-weight: normal;
+                color: $colorWhite;
+                font-size: 25px;
+                line-height: 1;
+                padding-top: 18px;
+                letter-spacing: -1.6px;
+
+                &:after {
+                    content: "";
+                    width: 50%;
+                    display: block;
+                    height: 5px;
+                    background-color: $colorYellow;
+                    margin-top: 7px;
+
+                    @media (max-width: 768px){ 
+                        width: 89%;
+                    }
+                }
+            }
+            &--legend {
+                color: $colorWhite;
+                margin-bottom: 20px;
+                line-height: 18px;
+
+                strong {
+                    color: $colorYellow;
+                    font-weight: normal;
+                }
+            }
+        }
+        &-animation {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            width: 100%;
+
+            @media (max-width: 768px){
+                display: none;
+            }
+
+            &__coffe,
+            &__coffes {
+                position: absolute;
+            }
+            &__coffe {
+                right: -100px;
+                top: 650px;
+            }
+            &__coffes {
+                left: -690px;
+                top: 130px;
+            }
+        }
+        &-caroussel{
+            width: 90%;
+            margin: 0 auto;
+            position: absolute;
+            bottom: -160px;
+            left: 0;
+            right: 0;
+
+            @media (max-width: 992px) { 
+                bottom: 0;
+                width: 100%;
+                position: relative;
+                margin-top: 20px;
+            }
+
+            .slider-progress-bar { display: none; }
+
+            .owl-nav,
+            .owl-dots {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: auto;
+                z-index: 3;
+                display: flex;
+                padding-right: 15px;
+                padding-left: 15px;
+                margin-right: auto;
+                margin-left: auto;
+                width: 100%;
+                
+                @media (max-width: 768px)  { width: auto; }
+                @media (min-width: 992px)  { width:970px; }
+                @media (min-width: 1200px) { width:1170px; }               
+            }
+            .owl {
+                
+                &-nav {
+                    justify-content: flex-end;
+                    align-items: flex-end;
+                }
+                &-dots {
+                    justify-content: end;
+                    align-items: flex-end;
+                }
+                &-prev,
+                &-next{
+                    background-color: $colorYellow !important;
+                    width: 40px;
+                    height: 40px;
+                    display: block;
+                    transition: all .25s ease-in-out;
+                    margin-bottom: 50px;
+                    z-index: 5;
+                    font: icon !important;
+        
+                    @media (max-width: 768px){ margin-bottom: 20px; }
+                    
+                    &.disabled {
+                        opacity: 0.7;
+                    }
+                    span {
+                        font-size: 30px;
+                        color: $colorBrown;
+                    }
+                }
+                &-prev {
+                    border-radius: 16px 0px 0px 16px;
+                }
+                &-next {
+                    border-radius: 0px 16px 16px 0px;
+                }
+                &-dot {
+                    width: 14px;
+                    height: 14px;
+                    border: 1px solid $colorWhite !important;
+                    display: block;
+                    border-radius: 100%;
+                    margin-right: 5px;
+                    margin-bottom: 50px;
+        
+                    @media (max-width: 768px){ margin-bottom: 20px; }
+        
+                    &.active {
+                        background-color: $colorYellow;
+                    }
+                    &.last-child{
+                        margin: 0;
+                    }
+                }
+            }
+
+        }
+    }
+}

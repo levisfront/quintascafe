@@ -1,0 +1,125 @@
+@import 'variables.scss';
+
+.main {
+
+    &__machines {
+        position: relative;
+        width: 100%;
+        padding: 400px 0 60px 0;
+
+        @media (max-width: 980px){
+            padding: 50px 0 0 0;
+        }
+
+        .container {
+            overflow: hidden;
+        }
+
+        &-title {
+            position: relative;
+            z-index: 2;
+            margin-right: 119px;
+            float: left;
+
+            @media (max-width: 1200px){
+                margin-right: 95px;
+            }
+            @media (max-width: 768px){
+                margin-right: 0px;
+                clear: both;
+            }
+
+            &--line {
+                background-color: $colorRed;
+                height: 4px;
+                display: block;
+                margin-right: 50px;
+                width: 80px;
+                float: left;
+
+                @media (max-width: 1200px){ width:50px; }
+                @media (max-width: 768px){
+                    display: none;
+                }
+            }
+
+            &-box {
+                float: left;
+                width: 180px;
+
+                @media (max-width: 980px){
+                    width: 90%;
+                }
+
+                &--tit {
+                    border-bottom: 4px solid $colorYellow;
+                    padding-bottom: 7px;
+                    font-size: 42px;
+                    font-weight: normal;
+                    color: $colorBrown;
+                    line-height: 1;
+                    margin-bottom: 20px;
+                }
+                &--legend {
+                    margin-bottom: 20px;
+                    line-height: 18px; 
+                    color: $colorBrown;
+                }
+            }
+        }
+        &-box {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+
+            @media (max-width: 980px){
+                width: 100%;
+            }
+
+            &-item {
+                display: flex;
+                align-items: flex-start;
+                margin-bottom: 50px;
+
+                @media (max-width: 980px){
+                    flex-direction: column;
+                }
+                
+                img {
+                    margin-right: 50px;
+                }
+
+                &__info {
+                    margin-right: 30px;
+
+                    @media (max-width: 980px){
+                        margin-top: 30px;
+                    }
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+
+                    &--tit {
+                        color: $colorBrown;
+                        margin-bottom: 10px;
+                        padding-bottom: 7px;
+
+                        &:after {
+                            content:"";
+                            height: 5px;
+                            width: 25%;
+                            background-color: $colorYellow;
+                            display: block;
+                        }
+                    }
+                    &--legend {
+                        line-height: 1.3;
+                        color: $colorBrown;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,48 @@
+@import './assets/stylesheets/header.scss';
+@import './assets/stylesheets/footer.scss';
+@import './assets/stylesheets/machines.scss';
+@import './assets/stylesheets/caroussel.scss';
+@import './assets/stylesheets/about.scss';
+@import './assets/stylesheets/services.scss';
+@import './assets/stylesheets/variables.scss';
+@import './assets/stylesheets/typography.scss';
+
+/* Reset //////////////////////////*/
+body{
+  overflow-x: hidden;
+}
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+}
+
+/* Breakpoint //////////////////////////*/
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;  
+
+  @media (max-width: 768px)  { 
+    width: auto; 
+
+    h2 {
+      font-size: 25px;
+      font-weight: normal;
+    }
+    h3 {
+      font-size: 16px;
+    }
+    p {
+      font-size: 12px;
+    }
+  }
+  @media (min-width: 768px)  { width: auto; }
+  @media (min-width: 992px)  { width:970px; }
+  @media (min-width: 1200px) { width:1170px; }
+}
+

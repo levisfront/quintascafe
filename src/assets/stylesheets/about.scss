@@ -1,0 +1,138 @@
+@import 'variables.scss';
+
+.main {
+
+    &__about {
+        padding: 100px 0 50px 0;
+        position: relative;
+        overflow: hidden;
+
+
+        @media (max-width: 1040px)  { 
+            padding: 50px 0 0 0;
+        }
+
+        .container {
+            position: relative;
+            z-index: 2;
+
+            @media (max-width: 1040px)  { 
+                width: auto;
+            }
+        }
+
+        &-info {
+            margin-bottom: 50px;
+            clear: both;
+            height: 100%;
+            width: 100%;
+            float: left;
+
+            &-txt{
+                width: 100%;
+
+                &--line,
+                &--title,
+                &--legend {
+                    float: left;
+
+                    @media (max-width: 1040px)  { 
+                        float: none;
+                    }
+                }
+                &--line {
+                    height: 4px;
+                    display: block;
+                    background-color: $colorRed;
+                    margin-right: 50px;
+                    width: 6%;
+
+                    @media (max-width: 1040px)  { 
+                        display: none;
+                        opacity: 0;
+                    }
+                }
+                &--offline {
+                    background-color: $colorWhite;
+                }
+                &--title{
+                    margin-right: 100px;
+                    border-bottom: 4px solid $colorYellow;
+                    padding-bottom: 7px;
+                    font-size: 42px;
+                    font-weight: normal;
+                    width: 17%;
+                    color: $colorBrown;
+                    line-height: 1;
+
+                    @media (max-width: 1040px)  { 
+                        width: auto;
+                        margin-bottom: 20px;
+                    }
+                }
+                &--offtitle{
+                    font-size: 25px;
+                }
+                &--legend {
+                    width: 40%;
+                    color: $colorBrown;
+                    line-height: 18px;
+
+                    @media (max-width: 1450px)  { 
+                        width: 30%;
+                    }
+
+                    @media (max-width: 1040px)  { 
+                        width: auto;
+                        margin-bottom: 20px;
+                        
+                    }
+                }
+            }
+        }
+        &-animation {
+            position: relative;
+            z-index: 1;
+
+            &__coffe,
+            &__coffes,
+            &__pointillism {
+                position: absolute; 
+                top: 0;
+            }
+            &__coffe {
+                right: 15%;
+                z-index: 2;
+                width: 14%;
+
+                @media (max-width: 1300px)  { 
+                    right: 7%;
+                }
+                @media (max-width: 1024px)  { 
+                    display: none;
+                }
+            }
+            &__coffes {
+                left: -180px;
+                top: 176px;
+
+                @media (max-width: 1024px)  { 
+                    display: none;
+                }
+            }
+            &__pointillism {
+                right: 11.4%;
+                top: 40px;
+                width: 21%;
+                
+                @media (max-width: 1300px)  { 
+                    right: -1%;
+                    width: 24%;
+                }
+                @media (max-width: 1024px)  { 
+                    display: none;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,185 @@
+@import 'variables.scss';
+
+.main {
+
+    .owl-carousel {
+        position: relative;
+    }
+    .slider-progress-bar {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 1;
+
+        .progress {
+            height: 5px;
+            background: $colorYellow;
+            animation: sliderProgressBar ease;
+            display: block;
+        }
+    }
+
+    .my-slider:hover {
+        .slider-progress-bar .progress {
+            animation-play-state: paused;
+        }
+    }
+
+    @keyframes sliderProgressBar {
+        0% {
+            width: 0%;
+        }
+
+        100% {
+            width: 100%;
+        }
+    }
+
+    &__info {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        &-title {
+            color: $colorYellow;
+            font-size: 45px;
+            font-weight: normal;
+            margin-bottom: 20px;
+            line-height: 1;
+        }
+        &-legend {
+            color: $colorWhite;
+            font-size: 25px;
+            line-height: 30px;
+
+            @media (max-width: 768px){
+                line-height: 1;
+            }
+        }
+        &-rays,
+        &-pointillism {
+            position: absolute;
+            right: 0;
+            bottom:0;
+
+            img {
+                width: auto;
+            }
+        }
+        &-pointillism {
+            display: block;
+            overflow: hidden;
+            width: 510px;
+            @media (max-width: 768px)  { display: none; }
+        }
+        &-rays{
+            right: 29%;
+            bottom: 60px;
+            @media (max-width: 768px)  { display: none; }
+        }
+    }
+
+    .owl-nav,
+    .owl-dots {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        z-index: 3;
+        display: flex;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+        width: 100%;
+        
+        @media (max-width: 768px)  { width: auto; }
+        @media (min-width: 768px)  { width: auto; }
+        @media (min-width: 992px)  { width:970px; }
+        @media (min-width: 1200px) { width:1170px; }
+    }
+    .owl {
+    
+        &-nav {
+            justify-content: flex-end;
+            align-items: flex-end;
+        }
+        &-dots {
+            justify-content: end;
+            align-items: flex-end;
+        }
+        &-prev,
+        &-next{
+            background-color: $colorYellow !important;
+            width: 40px;
+            height: 40px;
+            transition: all .25s ease-in-out;
+            margin-bottom: 50px;
+            z-index: 5;
+            font: icon !important;
+
+            @media (max-width: 768px){ margin-bottom: 20px; }
+            
+            &.disabled {
+                opacity: 0.7;
+            }
+            span {
+                font-size: 30px;
+                color: $colorBrown;
+            }
+        }
+        &-prev {
+            border-radius: 16px 0px 0px 16px;
+        }
+        &-next {
+            border-radius: 0px 16px 16px 0px;
+        }
+        &-dot {
+            width: 14px;
+            height: 14px;
+            border: 1px solid $colorWhite !important;
+            display: block;
+            border-radius: 100%;
+            margin-right: 5px;
+            margin-bottom: 50px;
+
+            @media (max-width: 768px){ margin-bottom: 20px; }
+
+            &.active {
+                background-color: $colorYellow;
+            }
+            &.last-child{
+                margin: 0;
+            }
+        }
+    }
+
+    &__caroussel {
+        height: 100%;
+        position: relative;
+
+        &-ui {
+            position: absolute;
+            bottom: 50px;
+            left: calc(50% - 10px);
+            z-index: 1;
+
+            &__ancor{ 
+                display: flex;
+                justify-content: center;
+                z-index: 3;
+                position: relative;
+
+                @media (max-width: 768px)  { display: none; }
+            }
+        }
+    }
+}
