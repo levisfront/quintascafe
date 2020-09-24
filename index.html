@@ -26,11 +26,11 @@
                 <span class="header__nav-cta--line"></span>
             </a>
             <nav class="header__nav" id="nav-item">
-                <a class="header__nav--link" href="#" title="Home">Home</a>
-                <a class="header__nav--link" href="#" title="Sobre nós">Sobre nós</a>
-                <a class="header__nav--link" href="#" title="Serviços">Serviços</a>
-                <a class="header__nav--link" href="#" title="Máquinas">Máquinas</a>
-                <a class="header__nav--link" href="#" title="Contato">Contato</a>
+                <a class="header__nav--link" href="#banner" title="Home">Home</a>
+                <a class="header__nav--link" href="#about" title="Sobre nós">Sobre nós</a>
+                <a class="header__nav--link" href="#services" title="Serviços">Serviços</a>
+                <a class="header__nav--link" href="#machines" title="Máquinas">Máquinas</a>
+                <a class="header__nav--link" href="#contact" title="Contato">Contato</a>
             </nav>
             <div class="header__socialnetworks">
                 <p class="header__socialnetworks-legend">Siga nossas redes sociais</p>
@@ -38,12 +38,12 @@
                     <a class="header__socialnetworks-links--links" href="#" title="Facebook">
                         <img src="assets/images/facebook.svg" alt="Facebook">
                     </a>
-                    <a class="header__socialnetworks-links--links" href="#" title="Twitter">
+                    <!-- <a class="header__socialnetworks-links--links" href="#" title="Twitter">
                         <img src="assets/images/twitter.svg" alt="Twitter">
-                    </a>
-                    <a class="header__socialnetworks-links--links" href="#" title="Youtube">
+                    </a> -->
+                    <!-- <a class="header__socialnetworks-links--links" href="#" title="Youtube">
                         <img src="assets/images/youtube.svg" alt="Youtube">
-                    </a>
+                    </a> -->
                     <a class="header__socialnetworks-links--links" href="#" title="Instagram">
                         <img src="assets/images/instagram.svg" alt="instagram">
                     </a>
@@ -52,7 +52,7 @@
         </section>
     </header>
     <main class="main">
-        <section class="main__caroussel">
+        <section id="banner" class="main__caroussel">
             <div id="owl-banner" class="owl-carousel owl-theme">
                 <div>
                     <img src="assets/images/banner1.png" alt="">
@@ -98,11 +98,11 @@
                 </div>
             </div>
             <div class="main__caroussel-ui">
-                <a class="main__caroussel-ui__ancor" href="javascript:void(0);"> <img src="assets/images/ancor.svg"
+                <a class="main__caroussel-ui__ancor" href="#about"> <img src="assets/images/ancor.svg"
                         alt=""></a>
             </div>
         </section>
-        <section class="main__about">
+        <section id="about" class="main__about">
             <div class="container">
                 <div class="main__about-info">
                     <div class="main__about-info-txt">
@@ -159,7 +159,7 @@
                 </div>
             </div>
         </section>
-        <section class="main__services">
+        <section id="services" class="main__services">
             <div class="container">
                 <div class="main__services-title">
                     <span class="main__services-title--line"></span>
@@ -213,27 +213,8 @@
                     </figure>
                 </div>
             </div>
-            <div class="container">
-                <div class="main__services-title main__services--mgb">
-                    <span class="main__services-title--line"></span>
-                    <h2 class="main__services-title--tit">Eventos</h2>
-                </div>
-            </div>
-            <div class="main__services-caroussel">
-                <div id="owl-events" class="owl-carousel owl-theme">
-                    <div>
-                        <img src="assets/images/bannershows.png" alt="">
-                    </div>
-                    <div>
-                        <img src="assets/images/bannershows.png" alt="">
-                    </div>
-                    <div>
-                        <img src="assets/images/bannershows.png" alt="">
-                    </div>
-                </div>
-            </div>
         </section>
-        <section class="main__machines">
+        <section id="machines" class="main__machines">
             <div class="container">
                 <div class="main__machines-title">
                     <span class="main__machines-title--line"></span>
@@ -257,19 +238,161 @@
                             <p class="main__machines-box-item__info--legend"> Fácil abastecimento, limpeza e manutenção.</p>
                         </div>
                         <div class="main__machines-box-item__info">
-                            <h3 class="main__machines-box-item__info--tit">XX Grão - Mini</h3>
-                            <p class="main__machines-box-item__info--legend">- Máquina compacta com design italiano. </p>
-                            <p class="main__machines-box-item__info--legend">- Utiliza café em grãos </p>
-                            <p class="main__machines-box-item__info--legend">- Mais 02 opções de solúveis (leite e chocolate) </p>
-                            <p class="main__machines-box-item__info--legend">Economiza tempo e mão de obra. </p>
-                            <p class="main__machines-box-item__info--legend">- Evita desperdícios, pois prepara uma dose de cada vez. </p>
-                            <p class="main__machines-box-item__info--legend"> 06 opções de bebidas </p>
-                            <p class="main__machines-box-item__info--legend"> Ocupa pouco espaço, table top. </p>
-                            <p class="main__machines-box-item__info--legend"> Fácil abastecimento, limpeza e manutenção.</p>
+                            <h3 class="main__machines-box-item__info--tit">CARACTERISTICAS TÉCNICAS
+                            </h3>
+                            <p class="main__machines-box-item__info--legend">Tensão: 220V<br>
+                                Abastecimento de água: Ponto Hídrico ou Galão 20 litros<br>
+                                Peso: 16 Kg<br>
+                                Altura: 56 cm<br>
+                                Largura: 30 cm<br>
+                                Profundidade: 46 cm
+                            </p>
+                        </div>
+                    </div>
+                    <div class="main__machines-box-item">
+                        <img src="assets/images/maquina2.png" alt="">
+                        <div class="main__machines-box-item__info">
+                            <h3 class="main__machines-box-item__info--tit">Bari</h3>
+                            <p class="main__machines-box-item__info--legend">- Máquina automática de procedência italiana para café. </p>
+                            <p class="main__machines-box-item__info--legend">- Prepara café em grão </p>
+                            <p class="main__machines-box-item__info--legend">- Fácil regulagem de água para sua dose. </p>
+                            <p class="main__machines-box-item__info--legend">- Moagem de grãos ajustável. </p>
+                            <p class="main__machines-box-item__info--legend">- Opções de Café Espresso forte, fraco e água quente. </p>
+                            <p class="main__machines-box-item__info--legend">- Modo Stand-by a cada 3 horas. </p>
+                            <p class="main__machines-box-item__info--legend">- Ocupa pouco espaço, table top. </p>
+                            <p class="main__machines-box-item__info--legend">- Fácil abastecimento, limpeza e manutenção.</p>
+                        </div>
+                        <div class="main__machines-box-item__info">
+                            <h3 class="main__machines-box-item__info--tit">CARACTERISTICAS TÉCNICAS</h3>
+                            <p class="main__machines-box-item__info--legend">Tensão: 220V<br>
+                                Abastecimento de água:<br> Reservatório com filtro interno<br>
+                                Peso: 10 Kg<br>
+                                Altura: 42 cm<br>
+                                Largura: 37 cm<br>
+                                Profundidade: 29 cm<br>
+                                Capacidade do reservatório de água: 2,2 litros </p>
+                        </div>
+                    </div>
+                    <div class="main__machines-box-item">
+                        <img src="assets/images/maquina3.png" alt="">
+                        <div class="main__machines-box-item__info">
+                            <h3 class="main__machines-box-item__info--tit">Lei 600 </h3>
+                            <p class="main__machines-box-item__info--legend">- Copo automático </p>
+                            <p class="main__machines-box-item__info--legend">- Possível regulagem de açúcar  </p>
+                            <p class="main__machines-box-item__info--legend">- Café em grãos e solúvel</p>
+                            <p class="main__machines-box-item__info--legend">- Capacidade interna 600 copos </p>
+                            <p class="main__machines-box-item__info--legend">- Opção SEM COPO  </p>
+                            <p class="main__machines-box-item__info--legend">- Design Moderno </p>
+                            <p class="main__machines-box-item__info--legend">- 12 botões , sendo 10 opções de bebidas </p>
+                        </div>
+                        <div class="main__machines-box-item__info">
+                            <h3 class="main__machines-box-item__info--tit">CARACTERISTICAS TÉCNICAS</h3>
+                            <p class="main__machines-box-item__info--legend">Tensão: 220V<br>
+                                Abastecimento de água: <br>
+                                Ponto hidráulico ou galão 20 <br>
+                                lts<br>
+                                Peso: 130 Kg<br>
+                                Altura: 163 cm<br>
+                                Largura: 63 cm<br>
+                                Profundidade: 75 cm</p>
+                        </div>
+                    </div>
+                    <div class="main__machines-box-item">
+                        <img src="assets/images/maquina4.png" alt="">
+                        <div class="main__machines-box-item__info">
+                            <h3 class="main__machines-box-item__info--tit">Lei 400 </h3>
+                            <p class="main__machines-box-item__info--legend">- Copo automático </p>
+                            <p class="main__machines-box-item__info--legend">- Possível regulagem de açúcar </p>
+                            <p class="main__machines-box-item__info--legend">- Café em grãos e solúvel</p>
+                            <p class="main__machines-box-item__info--legend">- Capacidade interna 400 copos </p>
+                            <p class="main__machines-box-item__info--legend">- Opção SEM COPO</p>
+                            <p class="main__machines-box-item__info--legend">- Design Moderno</p>
+                            <p class="main__machines-box-item__info--legend">- 12 botões , sendo 10 opções de bebidas</p>
+                        </div>
+                        <div class="main__machines-box-item__info">
+                            <h3 class="main__machines-box-item__info--tit">CARACTERISTICAS TÉCNICAS</h3>
+                            <p class="main__machines-box-item__info--legend">Tensão: 220V<br>
+                                Abastecimento de água: <br>
+                                Ponto hidráulico ou galão 20 <br>
+                                lts<br>
+                                Peso: 130 Kg<br>
+                                Altura: 163 cm<br>
+                                Largura: 63 cm<br>
+                                Profundidade: 75 cm</p>
+                        </div>
+                    </div>
+                    <div class="main__machines-box-item">
+                        <img src="assets/images/maquina5.png" alt="">
+                        <div class="main__machines-box-item__info">
+                            <h3 class="main__machines-box-item__info--tit">Lei 200 </h3>
+                            <p class="main__machines-box-item__info--legend">- Copo automático</p>
+                            <p class="main__machines-box-item__info--legend">- LCD 7 polegadas (Possível comunicação da empresa)</p>
+                            <p class="main__machines-box-item__info--legend">- Opção Bebida SEM COPO</p>
+                            <p class="main__machines-box-item__info--legend">- Aceita moedas </p>
+                            <p class="main__machines-box-item__info--legend">- 10 opções de bebidas, além da regulagem de açúcar.</p>
+                            <p class="main__machines-box-item__info--legend">- Capacidade interna 200 copos</p>
+                        </div>
+                        <div class="main__machines-box-item__info">
+                            <h3 class="main__machines-box-item__info--tit">CARACTERISTICAS TÉCNICAS</h3>
+                            <p class="main__machines-box-item__info--legend">Tensão: 220V<br>
+                                Abastecimento de água: Ponto hidráulico ou galão 20 lts<br>
+                                Peso: 51 Kg<br>
+                                Altura: 74,5 cm<br>
+                                Largura: 51 cm<br>
+                                Profundidade: 60 cm</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="main__machines-title">
+                    <span class="main__machines-title--line"></span>
+                    <div class="main__machines-title-box" >
+                        <h2 class="main__machines-title-box--tit">Eventos</h2>
+                    </div>
+                </div>
+                <div class="main__machines-caroussel">
+                    <div id="owl-events" class="owl-carousel owl-theme">
+                        <div>
+                            <img src="assets/images/bannershows.png" alt="">
+                        </div>
+                        <div>
+                            <img src="assets/images/bannershows.png" alt="">
+                        </div>
+                        <div>
+                            <img src="assets/images/bannershows.png" alt="">
                         </div>
                     </div>
                 </div>
             </div>
+        </section>
+        <section id="contact" class="main__form">
+            <div class="container">
+                <div class="main__form-title">
+                    <span class="main__form-title--line"></span>
+                    <div class="main__form-title-box" >
+                        <h2 class="main__form-title-box--tit">Vamos tomar um café?</h2>
+                        <p class="main__form-title-box--legend">Preencha o formulário ao lado ou se preferir<br> nos mande um email ou ligue para:</p>
+                        <ul class="main__form-title-box__contact">
+                            <li class="main__form-title-box__contact-item">
+                                <img src="assets/images/whatsapp.svg" alt="">
+                                <a href="">11-98886-9711</a>
+                            </li>
+                            <li class="main__form-title-box__contact-item">
+                                <img src="assets/images/email.svg" alt="">
+                                <a href="mailto:contato@quintasdocafe.com.br">contato@quintasdocafe.com.br</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <form action="" id="retornoHTML" class="main__form-box">
+                    <h3 class="main__form-box__title">Locação</h3>
+                    <input type="text" id="nome" placeholder="Nome" class="main__form-box__input">
+                    <input type="text" id="email" placeholder="E-mail" class="main__form-box__input">
+                    <input type="text" id="telefone" placeholder="Telefone" class="main__form-box__input">
+                    <input type="text" id="assunto" placeholder="Assunto" class="main__form-box__input">
+                    <textarea id="msg" placeholder="Mensagem" class="main__form-box__input"></textarea>
+                    <button id="btn" class="main__form-box__btn">ENVIAR</button>
+                </form>
+            </div>  
         </section>
     </main>
     <footer class="footer">
@@ -282,11 +405,11 @@
                     reservados.</p>
             </div>
             <nav class="footer__nav">
-                <a href="#" class="footer__nav--link" title="HOME">HOME</a>
-                <a href="#" class="footer__nav--link" title="SOBRE NÓS">SOBRE NÓS</a>
-                <a href="#" class="footer__nav--link" title="SERVIÇOS">SERVIÇOS</a>
-                <a href="#" class="footer__nav--link" title="MÁQUINAS">MÁQUINAS</a>
-                <a href="#" class="footer__nav--link" title="CONTATO">CONTATO</a>
+                <a href="#banner" class="footer__nav--link" title="HOME">HOME</a>
+                <a href="#about" class="footer__nav--link" title="SOBRE NÓS">SOBRE NÓS</a>
+                <a href="#services" class="footer__nav--link" title="SERVIÇOS">SERVIÇOS</a>
+                <a href="#machines" class="footer__nav--link" title="MÁQUINAS">MÁQUINAS</a>
+                <a href="#contact" class="footer__nav--link" title="CONTATO">CONTATO</a>
             </nav>
             <form class="footer__form" action="">
                 <p class="footer__form-legend-primary">NEWSLETTER</p>
@@ -303,12 +426,12 @@
                     <a class="footer__socialnetworks-links--links" href="#" title="Facebook">
                         <img src="assets/images/facebook.svg" alt="Facebook">
                     </a>
-                    <a class="footer__socialnetworks-links--links" href="#" title="Twitter">
+                    <!-- <a class="footer__socialnetworks-links--links" href="#" title="Twitter">
                         <img src="assets/images/twitter.svg" alt="Twitter">
                     </a>
                     <a class="footer__socialnetworks-links--links" href="#" title="Youtube">
                         <img src="assets/images/youtube.svg" alt="Youtube">
-                    </a>
+                    </a> -->
                     <a class="footer__socialnetworks-links--links" href="#" title="Instagram">
                         <img src="assets/images/instagram.svg" alt="instagram">
                     </a>
